@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDD51CCC1F2617BA0079DA0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD51CCB1F2617BA0079DA0D /* AppDelegate.swift */; };
+		DDD51CCE1F2617BA0079DA0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD51CCD1F2617BA0079DA0D /* ViewController.swift */; };
+		DDD51CD11F2617BA0079DA0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD51CCF1F2617BA0079DA0D /* Main.storyboard */; };
+		DDD51CD31F2617BA0079DA0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD51CD21F2617BA0079DA0D /* Assets.xcassets */; };
+		DDD51CD61F2617BA0079DA0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD51CD41F2617BA0079DA0D /* LaunchScreen.storyboard */; };
+		DDD51CE11F2617BA0079DA0D /* MiaoPersonalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD51CE01F2617BA0079DA0D /* MiaoPersonalTests.swift */; };
+		DDD51CEC1F2617BA0079DA0D /* MiaoPersonalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD51CEB1F2617BA0079DA0D /* MiaoPersonalUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDD51CDD1F2617BA0079DA0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDD51CC01F2617BA0079DA0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDD51CC71F2617BA0079DA0D;
+			remoteInfo = MiaoPersonal;
+		};
+		DDD51CE81F2617BA0079DA0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDD51CC01F2617BA0079DA0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDD51CC71F2617BA0079DA0D;
+			remoteInfo = MiaoPersonal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDD51CC81F2617BA0079DA0D /* MiaoPersonal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiaoPersonal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD51CCB1F2617BA0079DA0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDD51CCD1F2617BA0079DA0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDD51CD01F2617BA0079DA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDD51CD21F2617BA0079DA0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDD51CD51F2617BA0079DA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDD51CD71F2617BA0079DA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD51CDC1F2617BA0079DA0D /* MiaoPersonalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiaoPersonalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD51CE01F2617BA0079DA0D /* MiaoPersonalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiaoPersonalTests.swift; sourceTree = "<group>"; };
+		DDD51CE21F2617BA0079DA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD51CE71F2617BA0079DA0D /* MiaoPersonalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiaoPersonalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD51CEB1F2617BA0079DA0D /* MiaoPersonalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiaoPersonalUITests.swift; sourceTree = "<group>"; };
+		DDD51CED1F2617BA0079DA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDD51CC51F2617BA0079DA0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD51CD91F2617BA0079DA0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD51CE41F2617BA0079DA0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDD51CBF1F2617BA0079DA0D = {
+			isa = PBXGroup;
+			children = (
+				DDD51CCA1F2617BA0079DA0D /* MiaoPersonal */,
+				DDD51CDF1F2617BA0079DA0D /* MiaoPersonalTests */,
+				DDD51CEA1F2617BA0079DA0D /* MiaoPersonalUITests */,
+				DDD51CC91F2617BA0079DA0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDD51CC91F2617BA0079DA0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDD51CC81F2617BA0079DA0D /* MiaoPersonal.app */,
+				DDD51CDC1F2617BA0079DA0D /* MiaoPersonalTests.xctest */,
+				DDD51CE71F2617BA0079DA0D /* MiaoPersonalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDD51CCA1F2617BA0079DA0D /* MiaoPersonal */ = {
+			isa = PBXGroup;
+			children = (
+				DDD51CCB1F2617BA0079DA0D /* AppDelegate.swift */,
+				DDD51CCD1F2617BA0079DA0D /* ViewController.swift */,
+				DDD51CCF1F2617BA0079DA0D /* Main.storyboard */,
+				DDD51CD21F2617BA0079DA0D /* Assets.xcassets */,
+				DDD51CD41F2617BA0079DA0D /* LaunchScreen.storyboard */,
+				DDD51CD71F2617BA0079DA0D /* Info.plist */,
+			);
+			path = MiaoPersonal;
+			sourceTree = "<group>";
+		};
+		DDD51CDF1F2617BA0079DA0D /* MiaoPersonalTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDD51CE01F2617BA0079DA0D /* MiaoPersonalTests.swift */,
+				DDD51CE21F2617BA0079DA0D /* Info.plist */,
+			);
+			path = MiaoPersonalTests;
+			sourceTree = "<group>";
+		};
+		DDD51CEA1F2617BA0079DA0D /* MiaoPersonalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDD51CEB1F2617BA0079DA0D /* MiaoPersonalUITests.swift */,
+				DDD51CED1F2617BA0079DA0D /* Info.plist */,
+			);
+			path = MiaoPersonalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDD51CC71F2617BA0079DA0D /* MiaoPersonal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD51CF01F2617BA0079DA0D /* Build configuration list for PBXNativeTarget "MiaoPersonal" */;
+			buildPhases = (
+				DDD51CC41F2617BA0079DA0D /* Sources */,
+				DDD51CC51F2617BA0079DA0D /* Frameworks */,
+				DDD51CC61F2617BA0079DA0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiaoPersonal;
+			productName = MiaoPersonal;
+			productReference = DDD51CC81F2617BA0079DA0D /* MiaoPersonal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDD51CDB1F2617BA0079DA0D /* MiaoPersonalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD51CF31F2617BA0079DA0D /* Build configuration list for PBXNativeTarget "MiaoPersonalTests" */;
+			buildPhases = (
+				DDD51CD81F2617BA0079DA0D /* Sources */,
+				DDD51CD91F2617BA0079DA0D /* Frameworks */,
+				DDD51CDA1F2617BA0079DA0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDD51CDE1F2617BA0079DA0D /* PBXTargetDependency */,
+			);
+			name = MiaoPersonalTests;
+			productName = MiaoPersonalTests;
+			productReference = DDD51CDC1F2617BA0079DA0D /* MiaoPersonalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDD51CE61F2617BA0079DA0D /* MiaoPersonalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDD51CF61F2617BA0079DA0D /* Build configuration list for PBXNativeTarget "MiaoPersonalUITests" */;
+			buildPhases = (
+				DDD51CE31F2617BA0079DA0D /* Sources */,
+				DDD51CE41F2617BA0079DA0D /* Frameworks */,
+				DDD51CE51F2617BA0079DA0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDD51CE91F2617BA0079DA0D /* PBXTargetDependency */,
+			);
+			name = MiaoPersonalUITests;
+			productName = MiaoPersonalUITests;
+			productReference = DDD51CE71F2617BA0079DA0D /* MiaoPersonalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDD51CC01F2617BA0079DA0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "苗建浩";
+				TargetAttributes = {
+					DDD51CC71F2617BA0079DA0D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					DDD51CDB1F2617BA0079DA0D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DDD51CC71F2617BA0079DA0D;
+					};
+					DDD51CE61F2617BA0079DA0D = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DDD51CC71F2617BA0079DA0D;
+					};
+				};
+			};
+			buildConfigurationList = DDD51CC31F2617BA0079DA0D /* Build configuration list for PBXProject "MiaoPersonal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDD51CBF1F2617BA0079DA0D;
+			productRefGroup = DDD51CC91F2617BA0079DA0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDD51CC71F2617BA0079DA0D /* MiaoPersonal */,
+				DDD51CDB1F2617BA0079DA0D /* MiaoPersonalTests */,
+				DDD51CE61F2617BA0079DA0D /* MiaoPersonalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDD51CC61F2617BA0079DA0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD51CD61F2617BA0079DA0D /* LaunchScreen.storyboard in Resources */,
+				DDD51CD31F2617BA0079DA0D /* Assets.xcassets in Resources */,
+				DDD51CD11F2617BA0079DA0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD51CDA1F2617BA0079DA0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD51CE51F2617BA0079DA0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDD51CC41F2617BA0079DA0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD51CCE1F2617BA0079DA0D /* ViewController.swift in Sources */,
+				DDD51CCC1F2617BA0079DA0D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD51CD81F2617BA0079DA0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD51CE11F2617BA0079DA0D /* MiaoPersonalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD51CE31F2617BA0079DA0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD51CEC1F2617BA0079DA0D /* MiaoPersonalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDD51CDE1F2617BA0079DA0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDD51CC71F2617BA0079DA0D /* MiaoPersonal */;
+			targetProxy = DDD51CDD1F2617BA0079DA0D /* PBXContainerItemProxy */;
+		};
+		DDD51CE91F2617BA0079DA0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDD51CC71F2617BA0079DA0D /* MiaoPersonal */;
+			targetProxy = DDD51CE81F2617BA0079DA0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDD51CCF1F2617BA0079DA0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD51CD01F2617BA0079DA0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDD51CD41F2617BA0079DA0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDD51CD51F2617BA0079DA0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDD51CEE1F2617BA0079DA0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDD51CEF1F2617BA0079DA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDD51CF11F2617BA0079DA0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MiaoPersonal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MiaoJH.MiaoPersonal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DDD51CF21F2617BA0079DA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MiaoPersonal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MiaoJH.MiaoPersonal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DDD51CF41F2617BA0079DA0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MiaoPersonalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MiaoJH.MiaoPersonalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiaoPersonal.app/MiaoPersonal";
+			};
+			name = Debug;
+		};
+		DDD51CF51F2617BA0079DA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MiaoPersonalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MiaoJH.MiaoPersonalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiaoPersonal.app/MiaoPersonal";
+			};
+			name = Release;
+		};
+		DDD51CF71F2617BA0079DA0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MiaoPersonalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MiaoJH.MiaoPersonalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MiaoPersonal;
+			};
+			name = Debug;
+		};
+		DDD51CF81F2617BA0079DA0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MiaoPersonalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MiaoJH.MiaoPersonalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MiaoPersonal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDD51CC31F2617BA0079DA0D /* Build configuration list for PBXProject "MiaoPersonal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD51CEE1F2617BA0079DA0D /* Debug */,
+				DDD51CEF1F2617BA0079DA0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDD51CF01F2617BA0079DA0D /* Build configuration list for PBXNativeTarget "MiaoPersonal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD51CF11F2617BA0079DA0D /* Debug */,
+				DDD51CF21F2617BA0079DA0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DDD51CF31F2617BA0079DA0D /* Build configuration list for PBXNativeTarget "MiaoPersonalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD51CF41F2617BA0079DA0D /* Debug */,
+				DDD51CF51F2617BA0079DA0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DDD51CF61F2617BA0079DA0D /* Build configuration list for PBXNativeTarget "MiaoPersonalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD51CF71F2617BA0079DA0D /* Debug */,
+				DDD51CF81F2617BA0079DA0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDD51CC01F2617BA0079DA0D /* Project object */;
+}
