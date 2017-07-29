@@ -33,4 +33,6 @@ var RGB_COLOR: (CGFloat, CGFloat, CGFloat) -> UIColor = {red, green, blue in
     return UIColor(red: red / 255, green: green / 255, blue: blue / 255, alpha: 1);
 }
 
+var BaseBackColor = UIColor.init(colorLiteralRed: 240 / 255, green: 240 / 255, blue: 240 / 255, alpha: 1.0)
+
 
