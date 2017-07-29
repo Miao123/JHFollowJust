@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD1169451F29E39900236A94 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1169441F29E39900236A94 /* ActivityViewController.swift */; };
+		DD1169471F29E42F00236A94 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1169461F29E42F00236A94 /* HomeViewController.swift */; };
+		DD1169491F29E46600236A94 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1169481F29E46600236A94 /* MineViewController.swift */; };
+		DD11694C1F29E9BC00236A94 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD11694B1F29E9BC00236A94 /* TabBarViewController.swift */; };
+		DD11694E1F29EC5900236A94 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD11694D1F29EC5900236A94 /* NavViewController.swift */; };
+		DDAA1F0E1F2B09DF0055C303 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA1F0D1F2B09DF0055C303 /* File.swift */; };
+		DDAA1F101F2B10830055C303 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA1F0F1F2B10830055C303 /* MineTableViewCell.swift */; };
 		DDD51CCC1F2617BA0079DA0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD51CCB1F2617BA0079DA0D /* AppDelegate.swift */; };
-		DDD51CCE1F2617BA0079DA0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD51CCD1F2617BA0079DA0D /* ViewController.swift */; };
 		DDD51CD11F2617BA0079DA0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD51CCF1F2617BA0079DA0D /* Main.storyboard */; };
 		DDD51CD31F2617BA0079DA0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD51CD21F2617BA0079DA0D /* Assets.xcassets */; };
 		DDD51CD61F2617BA0079DA0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD51CD41F2617BA0079DA0D /* LaunchScreen.storyboard */; };
@@ -34,13 +40,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD1169441F29E39900236A94 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		DD1169461F29E42F00236A94 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DD1169481F29E46600236A94 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		DD11694B1F29E9BC00236A94 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		DD11694D1F29EC5900236A94 /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		DDAA1F091F2AF3F90055C303 /* MiaoPersonal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiaoPersonal-Bridging-Header.h"; sourceTree = "<group>"; };
+		DDAA1F0D1F2B09DF0055C303 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		DDAA1F0F1F2B10830055C303 /* MineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
 		DDD51CC81F2617BA0079DA0D /* MiaoPersonal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiaoPersonal.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDD51CCB1F2617BA0079DA0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDD51CCD1F2617BA0079DA0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDD51CCB1F2617BA0079DA0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../AppDelegate.swift; sourceTree = "<group>"; };
 		DDD51CD01F2617BA0079DA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DDD51CD21F2617BA0079DA0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDD51CD21F2617BA0079DA0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		DDD51CD51F2617BA0079DA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DDD51CD71F2617BA0079DA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDD51CD71F2617BA0079DA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		DDD51CDC1F2617BA0079DA0D /* MiaoPersonalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiaoPersonalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD51CE01F2617BA0079DA0D /* MiaoPersonalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiaoPersonalTests.swift; sourceTree = "<group>"; };
 		DDD51CE21F2617BA0079DA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +87,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD07181D1F29C9B400120EAF /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		DD07181E1F29CD6600120EAF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DD11694A1F29E93000236A94 /* Controller */,
+				DD07181F1F29CDCA00120EAF /* AppDelegate */,
+				DD0718211F29D55500120EAF /* Base */,
+				DD0718201F29D3A400120EAF /* Toos */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DD07181F1F29CDCA00120EAF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DDD51CCB1F2617BA0079DA0D /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DD0718201F29D3A400120EAF /* Toos */ = {
+			isa = PBXGroup;
+			children = (
+				DDAA1F091F2AF3F90055C303 /* MiaoPersonal-Bridging-Header.h */,
+				DDAA1F0D1F2B09DF0055C303 /* File.swift */,
+			);
+			path = Toos;
+			sourceTree = "<group>";
+		};
+		DD0718211F29D55500120EAF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DD0E3E621F26ED3600F2B3FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDD51CCF1F2617BA0079DA0D /* Main.storyboard */,
+				DDD51CD21F2617BA0079DA0D /* Assets.xcassets */,
+				DDD51CD41F2617BA0079DA0D /* LaunchScreen.storyboard */,
+				DDD51CD71F2617BA0079DA0D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD11694A1F29E93000236A94 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD11694B1F29E9BC00236A94 /* TabBarViewController.swift */,
+				DD11694D1F29EC5900236A94 /* NavViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		DDD51CBF1F2617BA0079DA0D = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +172,8 @@
 		DDD51CCA1F2617BA0079DA0D /* MiaoPersonal */ = {
 			isa = PBXGroup;
 			children = (
-				DDD51CCB1F2617BA0079DA0D /* AppDelegate.swift */,
-				DDD51CCD1F2617BA0079DA0D /* ViewController.swift */,
-				DDD51CCF1F2617BA0079DA0D /* Main.storyboard */,
-				DDD51CD21F2617BA0079DA0D /* Assets.xcassets */,
-				DDD51CD41F2617BA0079DA0D /* LaunchScreen.storyboard */,
-				DDD51CD71F2617BA0079DA0D /* Info.plist */,
+				DDD51CF91F2619EE0079DA0D /* Classes */,
+				DD0E3E621F26ED3600F2B3FF /* Supporting Files */,
 			);
 			path = MiaoPersonal;
 			sourceTree = "<group>";
@@ -123,6 +194,51 @@
 				DDD51CED1F2617BA0079DA0D /* Info.plist */,
 			);
 			path = MiaoPersonalUITests;
+			sourceTree = "<group>";
+		};
+		DDD51CF91F2619EE0079DA0D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DDD51CFB1F261A2D0079DA0D /* Home */,
+				DDD51CFA1F261A2D0079DA0D /* Activity */,
+				DDD51CFC1F261A2D0079DA0D /* Mine */,
+				DD07181E1F29CD6600120EAF /* Main */,
+				DD07181D1F29C9B400120EAF /* NetWork */,
+				DDD51CFD1F261B640079DA0D /* Resource */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DDD51CFA1F261A2D0079DA0D /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				DD1169441F29E39900236A94 /* ActivityViewController.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		DDD51CFB1F261A2D0079DA0D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DD1169461F29E42F00236A94 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DDD51CFC1F261A2D0079DA0D /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				DD1169481F29E46600236A94 /* MineViewController.swift */,
+				DDAA1F0F1F2B10830055C303 /* MineTableViewCell.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		DDD51CFD1F261B640079DA0D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +309,8 @@
 				TargetAttributes = {
 					DDD51CC71F2617BA0079DA0D = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = B7UQ7WHB5T;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					DDD51CDB1F2617BA0079DA0D = {
@@ -259,8 +377,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD51CCE1F2617BA0079DA0D /* ViewController.swift in Sources */,
 				DDD51CCC1F2617BA0079DA0D /* AppDelegate.swift in Sources */,
+				DD1169451F29E39900236A94 /* ActivityViewController.swift in Sources */,
+				DDAA1F0E1F2B09DF0055C303 /* File.swift in Sources */,
+				DD1169471F29E42F00236A94 /* HomeViewController.swift in Sources */,
+				DD11694C1F29E9BC00236A94 /* TabBarViewController.swift in Sources */,
+				DD11694E1F29EC5900236A94 /* NavViewController.swift in Sources */,
+				DDAA1F101F2B10830055C303 /* MineTableViewCell.swift in Sources */,
+				DD1169491F29E46600236A94 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +426,7 @@
 				DDD51CD01F2617BA0079DA0D /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		DDD51CD41F2617BA0079DA0D /* LaunchScreen.storyboard */ = {
@@ -310,6 +435,7 @@
 				DDD51CD51F2617BA0079DA0D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,10 +538,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = B7UQ7WHB5T;
 				INFOPLIST_FILE = MiaoPersonal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MiaoJH.MiaoPersonal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MiaoPersonal/Classes/Main/Toos/MiaoPersonal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -424,10 +555,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = B7UQ7WHB5T;
 				INFOPLIST_FILE = MiaoPersonal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MiaoJH.MiaoPersonal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MiaoPersonal/Classes/Main/Toos/MiaoPersonal-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -505,6 +640,7 @@
 				DDD51CF21F2617BA0079DA0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDD51CF31F2617BA0079DA0D /* Build configuration list for PBXNativeTarget "MiaoPersonalTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +649,7 @@
 				DDD51CF51F2617BA0079DA0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDD51CF61F2617BA0079DA0D /* Build configuration list for PBXNativeTarget "MiaoPersonalUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +658,7 @@
 				DDD51CF81F2617BA0079DA0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
