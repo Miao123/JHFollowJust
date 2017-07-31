@@ -18,8 +18,10 @@ class MineTableViewCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        nameLabel = UILabel.init(frame: CGRect(x:10, y:0, width:100, height:40 * DISTENCEH))
-        self.contentView .addSubview(nameLabel)
+        nameLabel = UILabel.init(frame: CGRect(x:10, y:0, width:120 * DISTENCEW, height:40 * DISTENCEH))
+        nameLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        nameLabel.textColor = BaseTextColor
+        self.contentView.addSubview(nameLabel)
         
     }
     

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 let screenWidth = UIScreen.main.bounds.size.width
 let screenHeight = UIScreen.main.bounds.size.height
 
@@ -34,5 +35,11 @@ var RGB_COLOR: (CGFloat, CGFloat, CGFloat) -> UIColor = {red, green, blue in
 }
 
 var BaseBackColor = UIColor.init(colorLiteralRed: 240 / 255, green: 240 / 255, blue: 240 / 255, alpha: 1.0)
+
+let BaseTextColor = UIColor.darkGray
+
+let userDefa = UserDefaults.standard
+
+let fontStr = userDefa.object(forKey: "fontSize") as! String
 
 

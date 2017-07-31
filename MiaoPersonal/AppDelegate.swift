@@ -12,17 +12,36 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    
-    
+
+    let userDefault = UserDefaults.standard
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.rootViewController = TabBarViewController()
+        openHomeVC(fontStr: "15")
         window?.makeKeyAndVisible()
+        
+        //  更改字体大小
+        NotificationCenter.default.addObserver(self, selector: #selector(changeFont), name: NSNotification.Name(rawValue: "changeF"), object: nil)
         
         return true
     }
+    
+    
+    //  打开主界面
+    func openHomeVC(fontStr: NSString) {
+        
+        userDefault.set(fontStr, forKey: "fontSize")
+        window?.rootViewController = TabBarViewController()
+    }
+    
+    
+    func changeFont(obje:Notification) {
+        let notiFont = obje.object as! String
+        openHomeVC(fontStr: notiFont as NSString)
+    }
+    
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

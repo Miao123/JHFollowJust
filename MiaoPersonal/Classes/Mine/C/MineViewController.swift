@@ -12,7 +12,7 @@ import UIKit
 class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     var textArr = NSArray()
-    
+    var imageArr = NSArray()
     
     
     override func viewDidLoad() {
@@ -24,25 +24,47 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.view.backgroundColor = BaseBackColor
         self.automaticallyAdjustsScrollViewInsets = false
         
-        textArr = ["个人信息","清除缓存","去评价","推荐给好友"]
+        textArr = ["个人信息", "我的二维码", "推荐给好友", "去评价"]
+        imageArr = ["个人信息", "二维码", "推荐给好友", "去评价", "设置",]
         
         
-        
-        let headbotView = UIView.init(frame: CGRect(x:0, y:0, width:screenWidth, height:30 + 50 * DISTENCEH))
+        let headbotView = UIView.init(frame: CGRect(x:0, y:0, width:screenWidth, height:30 + 90 * DISTENCEH))
         headbotView.backgroundColor = BaseBackColor
         
         
-        let headView = UIView.init(frame: CGRect(x:0, y:0, width:screenWidth, height:20 + 50 * DISTENCEH))
+        let headView = UIView.init(frame: CGRect(x:0, y:0, width:screenWidth, height:headbotView.height - 10))
         headView.backgroundColor = UIColor.white
         headbotView.addSubview(headView)
         
         
-        let headImage = UIImageView.init(frame: CGRect(origin: CGPoint(x:0, y:10),size: CGSize(width:50 * DISTENCEW,height:50 * DISTENCEW)))
+        let headImage = UIImageView.init(frame: CGRect(origin: CGPoint(x:12, y:15 * DISTENCEH),size: CGSize(width:60 * DISTENCEW,height:60 * DISTENCEW)))
         headImage.image = UIImage.init(named: "111")
-        headImage.layer.cornerRadius = 25 * DISTENCEW
+        headImage.centerY = headView.centerY
+        headImage.layer.cornerRadius = headImage.height / 2
         headImage.layer.masksToBounds = true
-        headImage.center.x = self.view.center.x
         headView.addSubview(headImage)
+        
+        
+        let nameLabel = UILabel.init(frame: CGRect(x:headImage.right + 10 * DISTENCEW, y:headImage.top, width:200 * DISTENCEW, height: 30 * DISTENCEH))
+        nameLabel.text = "新用户"
+        nameLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        nameLabel.textColor = BaseTextColor
+        headView.addSubview(nameLabel)
+        
+        
+        let phoneLabel = UILabel.init(frame: CGRect(x:headImage.right + 10 * DISTENCEW, y:nameLabel.bottom, width:200 * DISTENCEW, height: 30 * DISTENCEH))
+        phoneLabel.text = "账号"
+        phoneLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        phoneLabel.textColor = BaseTextColor
+        headView.addSubview(phoneLabel)
+        
+        
+        let textView = UITextView.init(frame: CGRect(x:10, y:headImage.bottom + 10, width:screenWidth - 20, height:60 * DISTENCEH))
+        textView.backgroundColor = UIColor.white
+        textView.text = "请写下您的座右铭"
+        textView.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        textView.textColor = BaseTextColor
+        //        headView.addSubview(textView)
         
         
         let mineTable = UITableView.init(frame: CGRect(origin: CGPoint(x:0, y:NAVGATION_ADD_STATUS_HEIGHT),size: CGSize(width:screenWidth,height:screenHeight)), style: UITableViewStyle.plain)
@@ -99,10 +121,17 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             cell = MineTableViewCell(style:UITableViewCellStyle.default ,reuseIdentifier: cellID)
         }
         if indexPath.section == 0 {
-            cell!.nameLabel.text = textArr[indexPath.row] as? String
+            cell?.imageView?.image = UIImage.init(named: (imageArr[indexPath.row] as! String)
+                )!
+            cell?.textLabel?.text = textArr[indexPath.row] as? String
+            
         }else if indexPath.section == 1{
-            cell!.nameLabel.text = "设置"
+            cell?.imageView?.image = UIImage.init(named: "设置")
+            cell?.textLabel?.text = "设置"
         }
+        cell?.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
+        cell?.textLabel?.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        cell?.textLabel?.textColor = BaseTextColor
         return cell!
     }
     
@@ -110,22 +139,27 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
+        self.hidesBottomBarWhenPushed = true
+        //        self.tabBarController?.tabBar.isHidden = true
         if indexPath.section == 0 {
             if indexPath.row == 0 {
-                print("第%d个",indexPath.row)
+                
             }else if indexPath.row == 1 {
-                print("第%d个",indexPath.row)
+                
             }else if indexPath.row == 2 {
-                print("第%d个",indexPath.row)
-
+                
             }else if indexPath.row == 3 {
-                print("第%d个",indexPath.row)
+                
             }
         }else{
             if indexPath.row == 0 {
-                print("第%d个",indexPath.row)
+                let setUpVC = SetUpViewController()
+                self.navigationController?.pushViewController(setUpVC, animated: true)
             }
         }
+//        self.tabBarController?.tabBar.isHidden = false
+
+        self.hidesBottomBarWhenPushed = false
     }
     
     override func didReceiveMemoryWarning() {
