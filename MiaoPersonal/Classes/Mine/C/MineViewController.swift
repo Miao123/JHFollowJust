@@ -81,6 +81,7 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         return 2
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return textArr.count

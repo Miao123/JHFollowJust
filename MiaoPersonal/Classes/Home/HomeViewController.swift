@@ -19,8 +19,8 @@ class HomeViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         
         self.titleStr()
+        
     }
-    
     
     fileprivate func titleStr(){
         
