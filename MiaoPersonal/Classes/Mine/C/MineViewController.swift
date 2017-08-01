@@ -47,13 +47,13 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         let nameLabel = UILabel.init(frame: CGRect(x:headImage.right + 10 * DISTENCEW, y:headImage.top, width:200 * DISTENCEW, height: 30 * DISTENCEH))
         nameLabel.text = "新用户"
-        nameLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        nameLabel.font = UIFont.systemFont(ofSize: 17 * DISTENCEW)
         nameLabel.textColor = BaseTextColor
         headView.addSubview(nameLabel)
         
         
         let phoneLabel = UILabel.init(frame: CGRect(x:headImage.right + 10 * DISTENCEW, y:nameLabel.bottom, width:200 * DISTENCEW, height: 30 * DISTENCEH))
-        phoneLabel.text = "账号"
+        phoneLabel.text = "账号:18401569283"
         phoneLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
         phoneLabel.textColor = BaseTextColor
         headView.addSubview(phoneLabel)
@@ -139,10 +139,12 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
-        self.hidesBottomBarWhenPushed = true
+        //        self.hidesBottomBarWhenPushed = true
         //        self.tabBarController?.tabBar.isHidden = true
         if indexPath.section == 0 {
             if indexPath.row == 0 {
+                let personalVC = PersonalController()
+                self.navigationController?.pushViewController(personalVC, animated: true)
                 
             }else if indexPath.row == 1 {
                 
@@ -157,9 +159,9 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                 self.navigationController?.pushViewController(setUpVC, animated: true)
             }
         }
-//        self.tabBarController?.tabBar.isHidden = false
-
-        self.hidesBottomBarWhenPushed = false
+        //        self.tabBarController?.tabBar.isHidden = false
+        
+        //        self.hidesBottomBarWhenPushed = false
     }
     
     override func didReceiveMemoryWarning() {

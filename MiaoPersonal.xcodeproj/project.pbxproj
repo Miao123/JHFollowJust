@@ -11,6 +11,8 @@
 		DD1169471F29E42F00236A94 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1169461F29E42F00236A94 /* HomeViewController.swift */; };
 		DD11694C1F29E9BC00236A94 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD11694B1F29E9BC00236A94 /* TabBarViewController.swift */; };
 		DD11694E1F29EC5900236A94 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD11694D1F29EC5900236A94 /* NavViewController.swift */; };
+		DD219D3C1F30411900826BC8 /* PersonalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD219D3B1F30411900826BC8 /* PersonalController.swift */; };
+		DD219D3E1F30462000826BC8 /* PersonalTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD219D3D1F30462000826BC8 /* PersonalTableCell.swift */; };
 		DD5C90E11F2F80FD00941608 /* UIView+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C90E01F2F80FD00941608 /* UIView+NJ.m */; };
 		DDAA1F0E1F2B09DF0055C303 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA1F0D1F2B09DF0055C303 /* File.swift */; };
 		DDB8D7081F2CDC2400FD4F30 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8D7071F2CDC2400FD4F30 /* MineTableViewCell.swift */; };
@@ -48,6 +50,8 @@
 		DD1169461F29E42F00236A94 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DD11694B1F29E9BC00236A94 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		DD11694D1F29EC5900236A94 /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		DD219D3B1F30411900826BC8 /* PersonalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalController.swift; sourceTree = "<group>"; };
+		DD219D3D1F30462000826BC8 /* PersonalTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalTableCell.swift; sourceTree = "<group>"; };
 		DD5C90DF1F2F80FD00941608 /* UIView+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NJ.h"; sourceTree = "<group>"; };
 		DD5C90E01F2F80FD00941608 /* UIView+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NJ.m"; sourceTree = "<group>"; };
 		DDAA1F091F2AF3F90055C303 /* MiaoPersonal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiaoPersonal-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				DDB8D7091F2CDC3200FD4F30 /* MineViewController.swift */,
+				DD219D3B1F30411900826BC8 /* PersonalController.swift */,
 				DDB8D70B1F2CDC8400FD4F30 /* SetUpViewController.swift */,
 			);
 			path = C;
@@ -181,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				DDB8D7071F2CDC2400FD4F30 /* MineTableViewCell.swift */,
+				DD219D3D1F30462000826BC8 /* PersonalTableCell.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -426,10 +432,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDB8D70C1F2CDC8400FD4F30 /* SetUpViewController.swift in Sources */,
+				DD219D3C1F30411900826BC8 /* PersonalController.swift in Sources */,
 				DDB8D7081F2CDC2400FD4F30 /* MineTableViewCell.swift in Sources */,
 				DDC1F1A01F2DB7B900BA4715 /* UIViewExt.m in Sources */,
 				DDD51CCC1F2617BA0079DA0D /* AppDelegate.swift in Sources */,
 				DDC1F1A51F2E169D00BA4715 /* MJHUser.swift in Sources */,
+				DD219D3E1F30462000826BC8 /* PersonalTableCell.swift in Sources */,
 				DD1169451F29E39900236A94 /* ActivityViewController.swift in Sources */,
 				DDB8D70A1F2CDC3200FD4F30 /* MineViewController.swift in Sources */,
 				DDAA1F0E1F2B09DF0055C303 /* File.swift in Sources */,
