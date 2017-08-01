@@ -9,9 +9,9 @@
 import UIKit
 
 class PersonalTableCell: UITableViewCell {
-    
     var nameLabel = UILabel()
-    
+    var headImage = UIImageView()
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,6 +24,13 @@ class PersonalTableCell: UITableViewCell {
         nameLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
         nameLabel.textAlignment = NSTextAlignment.right
         self.contentView.addSubview(nameLabel)
+        
+        
+        headImage = UIImageView.init(frame: CGRect(x:screenWidth - 50 - 60 * DISTENCEH, y:10 * DISTENCEH, width:60 * DISTENCEH, height:60 * DISTENCEH))
+        headImage.image = UIImage.init(named: "111")
+        headImage.layer.cornerRadius = 30 * DISTENCEH
+        headImage.layer.masksToBounds = true
+        self.contentView.addSubview(headImage)
         
     }
     
