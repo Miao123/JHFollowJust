@@ -8,6 +8,7 @@
 
 import UIKit
 
+//  个人信息
 class PersonalController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var textArr = NSArray()
     
