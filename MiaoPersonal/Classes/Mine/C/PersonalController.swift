@@ -88,7 +88,9 @@ class PersonalController: UIViewController, UITableViewDelegate, UITableViewData
         let changeVC = ChangeViewController()
         
         if indexPath.row == 0 {
-            takePhoto.photoView(textArr: textArr)
+            var photoArr = NSArray()
+            photoArr = ["从手机选择", "拍照", "取消"]
+            takePhoto.photoView(textArr: photoArr)
             takePhoto.backBtn.addTarget(self, action: #selector(btnClick), for: UIControlEvents.touchUpInside)
         }else if indexPath.row == 1 {
             self.navigationController?.pushViewController(changeVC, animated: true)
