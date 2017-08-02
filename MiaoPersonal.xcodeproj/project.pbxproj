@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		DD00E3FD1F30681D000B19F0 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD00E3FC1F30681D000B19F0 /* PhotoView.swift */; };
-		DD1169451F29E39900236A94 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1169441F29E39900236A94 /* ActivityViewController.swift */; };
 		DD1169471F29E42F00236A94 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1169461F29E42F00236A94 /* HomeViewController.swift */; };
 		DD11694C1F29E9BC00236A94 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD11694B1F29E9BC00236A94 /* TabBarViewController.swift */; };
 		DD11694E1F29EC5900236A94 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD11694D1F29EC5900236A94 /* NavViewController.swift */; };
 		DD219D3C1F30411900826BC8 /* PersonalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD219D3B1F30411900826BC8 /* PersonalController.swift */; };
 		DD219D3E1F30462000826BC8 /* PersonalTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD219D3D1F30462000826BC8 /* PersonalTableCell.swift */; };
 		DD2433621F30AA9C00B84588 /* ChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2433611F30AA9C00B84588 /* ChangeViewController.swift */; };
+		DD2E168A1F31CC0E009995BA /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E16891F31CC0E009995BA /* NotesViewController.swift */; };
+		DD2E168C1F31D7A9009995BA /* NewNotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E168B1F31D7A9009995BA /* NewNotesController.swift */; };
 		DD5C90E11F2F80FD00941608 /* UIView+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C90E01F2F80FD00941608 /* UIView+NJ.m */; };
 		DDAA1F0E1F2B09DF0055C303 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA1F0D1F2B09DF0055C303 /* File.swift */; };
 		DDB8D7081F2CDC2400FD4F30 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8D7071F2CDC2400FD4F30 /* MineTableViewCell.swift */; };
@@ -49,13 +50,14 @@
 
 /* Begin PBXFileReference section */
 		DD00E3FC1F30681D000B19F0 /* PhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
-		DD1169441F29E39900236A94 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		DD1169461F29E42F00236A94 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DD11694B1F29E9BC00236A94 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		DD11694D1F29EC5900236A94 /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 		DD219D3B1F30411900826BC8 /* PersonalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalController.swift; sourceTree = "<group>"; };
 		DD219D3D1F30462000826BC8 /* PersonalTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalTableCell.swift; sourceTree = "<group>"; };
 		DD2433611F30AA9C00B84588 /* ChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeViewController.swift; sourceTree = "<group>"; };
+		DD2E16891F31CC0E009995BA /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		DD2E168B1F31D7A9009995BA /* NewNotesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewNotesController.swift; sourceTree = "<group>"; };
 		DD5C90DF1F2F80FD00941608 /* UIView+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NJ.h"; sourceTree = "<group>"; };
 		DD5C90E01F2F80FD00941608 /* UIView+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NJ.m"; sourceTree = "<group>"; };
 		DDAA1F091F2AF3F90055C303 /* MiaoPersonal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiaoPersonal-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -169,6 +171,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DD2E16881F31CBDB009995BA /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				DD2E16891F31CC0E009995BA /* NotesViewController.swift */,
+				DD2E168B1F31D7A9009995BA /* NewNotesController.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
 		DDB8D7041F2CDBDC00FD4F30 /* C */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,21 +270,13 @@
 			isa = PBXGroup;
 			children = (
 				DDD51CFB1F261A2D0079DA0D /* Home */,
-				DDD51CFA1F261A2D0079DA0D /* Activity */,
+				DD2E16881F31CBDB009995BA /* Notes */,
 				DDD51CFC1F261A2D0079DA0D /* Mine */,
 				DD07181E1F29CD6600120EAF /* Main */,
 				DD07181D1F29C9B400120EAF /* NetWork */,
 				DDD51CFD1F261B640079DA0D /* Resource */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		DDD51CFA1F261A2D0079DA0D /* Activity */ = {
-			isa = PBXGroup;
-			children = (
-				DD1169441F29E39900236A94 /* ActivityViewController.swift */,
-			);
-			path = Activity;
 			sourceTree = "<group>";
 		};
 		DDD51CFB1F261A2D0079DA0D /* Home */ = {
@@ -445,11 +448,12 @@
 				DDD51CCC1F2617BA0079DA0D /* AppDelegate.swift in Sources */,
 				DDC1F1A51F2E169D00BA4715 /* MJHUser.swift in Sources */,
 				DD219D3E1F30462000826BC8 /* PersonalTableCell.swift in Sources */,
-				DD1169451F29E39900236A94 /* ActivityViewController.swift in Sources */,
 				DDB8D70A1F2CDC3200FD4F30 /* MineViewController.swift in Sources */,
 				DD2433621F30AA9C00B84588 /* ChangeViewController.swift in Sources */,
 				DDAA1F0E1F2B09DF0055C303 /* File.swift in Sources */,
+				DD2E168C1F31D7A9009995BA /* NewNotesController.swift in Sources */,
 				DD1169471F29E42F00236A94 /* HomeViewController.swift in Sources */,
+				DD2E168A1F31CC0E009995BA /* NotesViewController.swift in Sources */,
 				DD11694C1F29E9BC00236A94 /* TabBarViewController.swift in Sources */,
 				DD11694E1F29EC5900236A94 /* NavViewController.swift in Sources */,
 				DD5C90E11F2F80FD00941608 /* UIView+NJ.m in Sources */,

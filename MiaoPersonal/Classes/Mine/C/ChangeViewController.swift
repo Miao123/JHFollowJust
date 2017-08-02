@@ -65,8 +65,8 @@ class ChangeViewController: UIViewController, UITextFieldDelegate{
         }else{
             nickStr.set(newText, forKey: "realName")
         }
+        _ = self.navigationController?.popViewController(animated: true)
         
-        self.navigationController?.popViewController(animated: true)
     }
     
     

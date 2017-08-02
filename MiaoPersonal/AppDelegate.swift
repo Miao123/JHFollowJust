@@ -28,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    
     //  打开主界面
     func openHomeVC(fontStr: NSString) {
         

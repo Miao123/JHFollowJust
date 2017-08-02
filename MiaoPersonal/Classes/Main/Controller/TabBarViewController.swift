@@ -31,7 +31,7 @@ class TabBarViewController: UITabBarController {
     
     fileprivate func createMainTabBarChildViewController() {
         tabBarControllerAddChildViewController(HomeViewController(), title: "首页", imageName: "首页-2", selectedImageName: "首页", tag: 0)
-        tabBarControllerAddChildViewController(ActivityViewController(), title: "活动", imageName: "活动-2", selectedImageName: "活动", tag: 1)
+        tabBarControllerAddChildViewController(NotesViewController(), title: "笔记", imageName: "笔记-2", selectedImageName: "笔记", tag: 1)
         tabBarControllerAddChildViewController(MineViewController(), title: "我的", imageName: "我的-2", selectedImageName: "我的", tag: 2)
     }
     
