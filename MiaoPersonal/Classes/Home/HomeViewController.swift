@@ -18,6 +18,10 @@ class HomeViewController: UIViewController {
         self.title = "首页"
         self.view.backgroundColor = UIColor.white
         
+        
+        //  登录成功
+        userDefa.set(true, forKey: "isLogin")
+        
         self.titleStr()
         
     }

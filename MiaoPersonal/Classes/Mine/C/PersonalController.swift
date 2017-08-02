@@ -11,25 +11,45 @@ import UIKit
 //  个人信息
 class PersonalController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var textArr = NSArray()
-    
+    var informationArr = NSArray()
     var takePhoto = PhotoView()
+    var nickStr = NSString()
+    var realNameStr = NSString()
+    var personalTable = UITableView()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        nickStr = userDefa.object(forKey: "nickName") as! NSString
+        realNameStr = userDefa.object(forKey: "realName") as! NSString
+        
+        if nickStr == "" {
+            nickStr = "新用户"
+        }
+        
+        if realNameStr == "" {
+            realNameStr = "新用户"
+        }
+        informationArr = ["哈哈", nickStr, realNameStr]
+        personalTable.reloadData()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
         
         self.title = "个人信息"
         self.view.backgroundColor = BaseBackColor
         
-        textArr = ["我的头像","我的昵称","我的账号"]
+        textArr = ["我的头像","我的昵称","真实姓名"]
         
-        let personalTable = UITableView.init(frame: CGRect(x:0, y:0, width:screenWidth, height:screenHeight), style: UITableViewStyle.plain)
+        personalTable = UITableView.init(frame: CGRect(x:0, y:0, width:screenWidth, height:screenHeight), style: UITableViewStyle.plain)
         personalTable.delegate = self
         personalTable.dataSource = self
         personalTable.tableFooterView = UIView()
+        personalTable.backgroundColor = BaseBackColor
         self.view.addSubview(personalTable)
-        
     }
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
@@ -47,7 +67,7 @@ class PersonalController: UIViewController, UITableViewDelegate, UITableViewData
         cell?.textLabel?.text = textArr[indexPath.row] as? String
         cell?.textLabel?.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
         cell?.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
-        cell?.nameLabel.text = "哈哈"
+        cell?.nameLabel.text = informationArr[indexPath.row] as? String
         if indexPath.row == 0 {
             cell?.headImage.isHidden = false
             cell?.nameLabel.isHidden = true
@@ -55,6 +75,7 @@ class PersonalController: UIViewController, UITableViewDelegate, UITableViewData
             cell?.headImage.isHidden = true
             cell?.nameLabel.isHidden = false
         }
+        cell?.textLabel?.textColor = BaseTextColor
         return cell!
     }
     
@@ -64,10 +85,20 @@ class PersonalController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let changeVC = ChangeViewController()
+        
         if indexPath.row == 0 {
-            
             takePhoto.photoView(textArr: textArr)
             takePhoto.backBtn.addTarget(self, action: #selector(btnClick), for: UIControlEvents.touchUpInside)
+        }else if indexPath.row == 1 {
+            self.navigationController?.pushViewController(changeVC, animated: true)
+            changeVC.backStr = "修改昵称"
+            changeVC.fieldStr = "请输入昵称"
+        }else if indexPath.row == 2 {
+            self.navigationController?.pushViewController(changeVC, animated: true)
+            changeVC.backStr = "修改名字"
+            changeVC.fieldStr = "请输入真实姓名"
+            
         }
     }
     

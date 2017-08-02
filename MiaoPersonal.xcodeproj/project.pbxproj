@@ -174,8 +174,8 @@
 			children = (
 				DDB8D7091F2CDC3200FD4F30 /* MineViewController.swift */,
 				DD219D3B1F30411900826BC8 /* PersonalController.swift */,
-				DDB8D70B1F2CDC8400FD4F30 /* SetUpViewController.swift */,
 				DD2433611F30AA9C00B84588 /* ChangeViewController.swift */,
+				DDB8D70B1F2CDC8400FD4F30 /* SetUpViewController.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";

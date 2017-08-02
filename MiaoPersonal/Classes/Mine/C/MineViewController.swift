@@ -13,6 +13,7 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     var textArr = NSArray()
     var imageArr = NSArray()
+    var nickStr = NSString()
     
     
     override func viewDidLoad() {
@@ -45,8 +46,14 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         headView.addSubview(headImage)
         
         
+        nickStr = userDefa.object(forKey: "nickName") as! NSString
+        if nickStr == "" {
+            nickStr = "新用户"
+        }
+        
+        
         let nameLabel = UILabel.init(frame: CGRect(x:headImage.right + 10 * DISTENCEW, y:headImage.top, width:200 * DISTENCEW, height: 30 * DISTENCEH))
-        nameLabel.text = "新用户"
+        nameLabel.text = nickStr as String
         nameLabel.font = UIFont.systemFont(ofSize: 17 * DISTENCEW)
         nameLabel.textColor = BaseTextColor
         headView.addSubview(nameLabel)
@@ -161,7 +168,6 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             }
         }
         //        self.tabBarController?.tabBar.isHidden = false
-        
         //        self.hidesBottomBarWhenPushed = false
     }
     
