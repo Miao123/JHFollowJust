@@ -8,7 +8,11 @@
 
 import UIKit
 
-class NewNotesController: UIViewController {
+class NewNotesController: UIViewController, UITextViewDelegate{
+    var textArr = [String]()
+    var noteStr = NSString()
+    var newTextView = UITextView()
+    let noteDefa = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +21,7 @@ class NewNotesController: UIViewController {
         self.title = "新建笔记"
         self.view.backgroundColor = UIColor.white
         
+        textArr = userDefa.object(forKey: "storeNoteArr") as! [String]
         
         let addBtn = UIButton.init(frame: CGRect(x:0, y:0, width:50, height:44))
         addBtn.setTitle("完成", for: UIControlState.normal)
@@ -29,18 +34,32 @@ class NewNotesController: UIViewController {
         self.navigationItem.rightBarButtonItem = addBtnItem
         
         
-        let newTextView = UITextView.init(frame: CGRect(x:0, y:0, width:screenWidth, height:screenHeight))
+        newTextView = UITextView.init(frame: CGRect(x:0, y:0, width:screenWidth, height:screenHeight))
         newTextView.backgroundColor = UIColor.white
         newTextView.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
         newTextView.becomeFirstResponder()
         self.view.addSubview(newTextView)
         
+        
+        //  监听textView字体变化
+        NotificationCenter.default.addObserver(self, selector: #selector(NewNotesController.textViewChange), name: NSNotification.Name.UITextViewTextDidChange, object: nil)
     }
     
     
+    func textViewChange() {
+        noteStr = newTextView.text as NSString
+    }
+    
     func finishClick() {
         self.view.endEditing(true)
+        textArr.append(noteStr as String)
+        noteDefa.set(textArr, forKey: "storeNoteArr")
         _ = self.navigationController?.popViewController(animated: true)
+    }
+    
+    //  析构器
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     override func didReceiveMemoryWarning() {

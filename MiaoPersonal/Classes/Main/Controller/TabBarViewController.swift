@@ -19,12 +19,16 @@ class TabBarViewController: UITabBarController {
         
         
         let nickStr = UserDefaults.standard
+        let textArr = NSArray()
         
         if !userDefa.bool(forKey: "isLogin") {
             nickStr.set("", forKey: "nickName")
             nickStr.set("", forKey: "realName")
-        }else{
+            nickStr.set(textArr, forKey: "storeNoteArr")
             
+            print("第一次启动")
+        }else{
+            print("不是第一次启动")
         }
     }
     
