@@ -69,6 +69,7 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let newNoteVC = NewNotesController()
         newNoteVC.backNoteStr = textArr[indexPath.row] as! NSString
         newNoteVC.indexRow = indexPath.row
+        newNoteVC.noteBOOL = true
         self.navigationController?.pushViewController(newNoteVC, animated: true)
     }
     
