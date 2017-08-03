@@ -14,7 +14,16 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var textArr = NSArray()
     var imageArr = NSArray()
     var nickStr = NSString()
+    var nameLabel = UILabel()
     
+    override func viewWillAppear(_ animated: Bool) {
+        nickStr = userDefa.object(forKey: "nickName") as! NSString
+        if nickStr == "" {
+            nickStr = "新用户"
+        }
+        nameLabel.text = nickStr as String
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,14 +55,7 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         headView.addSubview(headImage)
         
         
-        nickStr = userDefa.object(forKey: "nickName") as! NSString
-        if nickStr == "" {
-            nickStr = "新用户"
-        }
-        
-        
-        let nameLabel = UILabel.init(frame: CGRect(x:headImage.right + 10 * DISTENCEW, y:headImage.top, width:200 * DISTENCEW, height: 30 * DISTENCEH))
-        nameLabel.text = nickStr as String
+        nameLabel = UILabel.init(frame: CGRect(x:headImage.right + 10 * DISTENCEW, y:headImage.top, width:200 * DISTENCEW, height: 30 * DISTENCEH))
         nameLabel.font = UIFont.systemFont(ofSize: 17 * DISTENCEW)
         nameLabel.textColor = BaseTextColor
         headView.addSubview(nameLabel)

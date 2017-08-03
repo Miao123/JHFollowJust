@@ -11,13 +11,15 @@ import UIKit
 class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var textArr = NSArray()
     var noteTableView = UITableView()
+    var noneLabel = UILabel()
+    
     
     override func viewWillAppear(_ animated: Bool) {
         textArr = userDefa.object(forKey: "storeNoteArr") as! NSArray
-        
         if textArr.count == 0 {
             noData()
         }else{
+            noneLabel.isHidden = true
             noteTableView.reloadData()
         }
     }
@@ -65,11 +67,13 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let newNoteVC = NewNotesController()
+        newNoteVC.backNoteStr = textArr[indexPath.row] as! NSString
+        newNoteVC.indexRow = indexPath.row
         self.navigationController?.pushViewController(newNoteVC, animated: true)
     }
     
     func noData() {
-        let noneLabel = UILabel.init(frame: CGRect(x:0, y:0, width:screenWidth, height:screenHeight))
+        noneLabel = UILabel.init(frame: CGRect(x:0, y:0, width:screenWidth, height:screenHeight))
         noneLabel.text = "暂无笔记、去添加"
         noneLabel.textColor = BaseTextColor
         noneLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)

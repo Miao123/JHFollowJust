@@ -20,7 +20,7 @@ class PhotoView: UIView {
         photoWindow?.addSubview(backBtn)
         
         
-        bottomView = UIView.init(frame: CGRect(x:0, y:screenHeight, width:screenWidth, height:120 * DISTENCEH + 10))
+        bottomView = UIView.init(frame: CGRect(x:0, y:screenHeight, width:screenWidth, height:126 * DISTENCEH + 10))
         bottomView.backgroundColor = RGB_COLOR(240, 240, 240)
         photoWindow?.addSubview(bottomView)
         
@@ -33,13 +33,13 @@ class PhotoView: UIView {
         
         for i in 0..<3 {
             let photoBtn = UIButton()
-            photoBtn.frame = CGRect(x:0, y:0, width:screenWidth, height:40 * DISTENCEH)
+            photoBtn.frame = CGRect(x:0, y:0, width:screenWidth, height:42 * DISTENCEH)
             if i == 0 {
                 photoBtn.top = 0
             }else if i == 1{
-                photoBtn.top = 40 * DISTENCEH
+                photoBtn.top = 42 * DISTENCEH
             }else if i == 2{
-                photoBtn.top = 80 * DISTENCEH + 10
+                photoBtn.top = 84 * DISTENCEH + 10
             }
             photoBtn.backgroundColor = UIColor.white
             photoBtn.setTitle(textArr[i] as? String, for: UIControlState.normal)
@@ -50,7 +50,7 @@ class PhotoView: UIView {
         }
         
         
-        let lineView = UIView.init(frame: CGRect(x:0, y:40 * DISTENCEH, width:screenWidth, height:1))
+        let lineView = UIView.init(frame: CGRect(x:0, y:42 * DISTENCEH, width:screenWidth, height:1))
         lineView.backgroundColor = RGB_COLOR(230, 230, 230)
         bottomView.addSubview(lineView)
     }

@@ -10,9 +10,11 @@ import UIKit
 
 class NewNotesController: UIViewController, UITextViewDelegate{
     var textArr = [String]()
+    var backNoteStr = NSString()
     var noteStr = NSString()
     var newTextView = UITextView()
     let noteDefa = UserDefaults.standard
+    var indexRow = Int()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +38,7 @@ class NewNotesController: UIViewController, UITextViewDelegate{
         
         newTextView = UITextView.init(frame: CGRect(x:0, y:0, width:screenWidth, height:screenHeight))
         newTextView.backgroundColor = UIColor.white
+        newTextView.text = backNoteStr as String
         newTextView.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
         newTextView.becomeFirstResponder()
         self.view.addSubview(newTextView)
@@ -45,17 +48,21 @@ class NewNotesController: UIViewController, UITextViewDelegate{
         NotificationCenter.default.addObserver(self, selector: #selector(NewNotesController.textViewChange), name: NSNotification.Name.UITextViewTextDidChange, object: nil)
     }
     
-    
     func textViewChange() {
         noteStr = newTextView.text as NSString
     }
     
+    
     func finishClick() {
         self.view.endEditing(true)
-        textArr.append(noteStr as String)
+        if noteStr.length > 0 {
+            textArr.remove(at: indexRow)
+            textArr.insert(noteStr as String, at: 0)
+        }
         noteDefa.set(textArr, forKey: "storeNoteArr")
         _ = self.navigationController?.popViewController(animated: true)
     }
+    
     
     //  析构器
     deinit {
