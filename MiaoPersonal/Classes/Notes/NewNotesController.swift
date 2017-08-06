@@ -26,6 +26,18 @@ class NewNotesController: UIViewController, UITextViewDelegate{
         
         textArr = userDefa.object(forKey: "storeNoteArr") as! [String]
         
+        
+        let backBtn = UIButton.init(frame: CGRect(x:0, y:0, width:80, height:44))
+        backBtn.backgroundColor = UIColor.clear
+        backBtn.setTitle("< 笔记", for: UIControlState.normal)
+        backBtn.setTitleColor(RGB_COLOR(37, 128, 251), for: UIControlState.normal)
+        backBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
+        backBtn.addTarget(self, action: #selector(backBtnClick), for: UIControlEvents.touchUpInside)
+        let backBtnItem = UIBarButtonItem.init()
+        backBtnItem.customView = backBtn
+        self.navigationItem.leftBarButtonItem = backBtnItem
+        
+        
         let addBtn = UIButton.init(frame: CGRect(x:0, y:0, width:50, height:44))
         addBtn.setTitle("完成", for: UIControlState.normal)
         addBtn.setTitleColor(BaseTextColor, for: UIControlState.normal)
@@ -55,6 +67,16 @@ class NewNotesController: UIViewController, UITextViewDelegate{
     
     
     func finishClick() {
+        textChange()
+    }
+    
+    
+    func backBtnClick() {
+        textChange()
+    }
+    
+    
+    func textChange() {
         self.view.endEditing(true)
         if noteStr.length > 0 {
             if noteBOOL {
