@@ -21,7 +21,11 @@ class PersonalTableCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         nameLabel = UILabel.init(frame: CGRect(x:screenWidth - 35 - 200 * DISTENCEW, y:0, width:200 * DISTENCEW, height:40 * DISTENCEH))
-        nameLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        if #available(iOS 8.2, *) {
+            nameLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
         nameLabel.textAlignment = NSTextAlignment.right
         nameLabel.textColor = BaseTextColor
         self.contentView.addSubview(nameLabel)

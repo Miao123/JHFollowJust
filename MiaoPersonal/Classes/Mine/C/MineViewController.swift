@@ -56,14 +56,23 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         
         nameLabel = UILabel.init(frame: CGRect(x:headImage.right + 10 * DISTENCEW, y:headImage.top, width:200 * DISTENCEW, height: 30 * DISTENCEH))
-        nameLabel.font = UIFont.systemFont(ofSize: 17 * DISTENCEW)
+        //        nameLabel.font = UIFont.systemFont(ofSize: 17 * DISTENCEW)
+        if #available(iOS 8.2, *) {
+            nameLabel.font = UIFont.systemFont(ofSize: 17 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
         nameLabel.textColor = BaseTextColor
         headView.addSubview(nameLabel)
         
         
         let phoneLabel = UILabel.init(frame: CGRect(x:headImage.right + 10 * DISTENCEW, y:nameLabel.bottom, width:200 * DISTENCEW, height: 30 * DISTENCEH))
         phoneLabel.text = "账号:18401569283"
-        phoneLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        if #available(iOS 8.2, *) {
+            phoneLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
         phoneLabel.textColor = BaseTextColor
         headView.addSubview(phoneLabel)
         
@@ -140,7 +149,11 @@ class MineViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             cell?.textLabel?.text = "设置"
         }
         cell?.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
-        cell?.textLabel?.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        if #available(iOS 8.2, *) {
+            cell?.textLabel?.font = UIFont.systemFont(ofSize: 15 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
         cell?.textLabel?.textColor = BaseTextColor
         return cell!
     }

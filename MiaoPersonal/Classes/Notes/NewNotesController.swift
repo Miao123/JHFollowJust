@@ -41,7 +41,11 @@ class NewNotesController: UIViewController, UITextViewDelegate{
         let addBtn = UIButton.init(frame: CGRect(x:0, y:0, width:50, height:44))
         addBtn.setTitle("完成", for: UIControlState.normal)
         addBtn.setTitleColor(BaseTextColor, for: UIControlState.normal)
-        addBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        if #available(iOS 8.2, *) {
+            addBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
         addBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.right
         addBtn.addTarget(self, action: #selector(finishClick), for: UIControlEvents.touchUpInside)
         let addBtnItem = UIBarButtonItem.init()
@@ -52,7 +56,11 @@ class NewNotesController: UIViewController, UITextViewDelegate{
         newTextView = UITextView.init(frame: CGRect(x:0, y:0, width:screenWidth, height:screenHeight))
         newTextView.backgroundColor = UIColor.white
         newTextView.text = backNoteStr as String
-        newTextView.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        if #available(iOS 8.2, *) {
+            newTextView.font = UIFont.systemFont(ofSize: 15 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
         newTextView.becomeFirstResponder()
         self.view.addSubview(newTextView)
         

@@ -20,7 +20,11 @@ class MineTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         nameLabel = UILabel.init(frame: CGRect(x:10, y:0, width:120 * DISTENCEW, height:40 * DISTENCEH))
-        nameLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        if #available(iOS 8.2, *) {
+            nameLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
         nameLabel.textColor = BaseTextColor
         self.contentView.addSubview(nameLabel)
         

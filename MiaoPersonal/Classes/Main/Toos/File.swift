@@ -36,7 +36,7 @@ var RGB_COLOR: (CGFloat, CGFloat, CGFloat) -> UIColor = {red, green, blue in
 
 var BaseBackColor = UIColor.init(colorLiteralRed: 245 / 255, green: 245 / 255, blue: 245 / 255, alpha: 1.0)
 
-let BaseTextColor = UIColor.init(red: 50 / 255, green: 50 / 255, blue: 50 / 255, alpha: 1.0)
+let BaseTextColor = UIColor.black
 
 let userDefa = UserDefaults.standard
 

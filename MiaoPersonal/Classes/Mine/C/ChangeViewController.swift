@@ -31,7 +31,11 @@ class ChangeViewController: UIViewController, UITextFieldDelegate{
         
         let nickLabel = UILabel.init(frame: CGRect(x:10, y:0, width:40 * DISTENCEW, height:45 * DISTENCEH))
         nickLabel.text = "昵称:"
-        nickLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        if #available(iOS 8.2, *) {
+            nickLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
         nickLabel.textColor = BaseTextColor
         bottomView.addSubview(nickLabel)
         
@@ -39,6 +43,11 @@ class ChangeViewController: UIViewController, UITextFieldDelegate{
         let nickField = UITextField.init(frame: CGRect(x:nickLabel.right, y:0, width:screenWidth - nickLabel.width - 10, height:45 * DISTENCEH))
         nickField.keyboardType = UIKeyboardType.default
         nickField.backgroundColor = UIColor.white
+        if #available(iOS 8.2, *) {
+            nickField.font = UIFont.systemFont(ofSize: 15 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
         nickField.placeholder = fieldStr as String
         nickField.textColor = BaseTextColor
         nickField.delegate = self

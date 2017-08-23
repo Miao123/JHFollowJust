@@ -64,7 +64,11 @@ class PersonalController: UIViewController, UITableViewDelegate, UITableViewData
             cell = PersonalTableCell(style:UITableViewCellStyle.default ,reuseIdentifier: cellID)
         }
         cell?.textLabel?.text = textArr[indexPath.row] as? String
-        cell?.textLabel?.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        if #available(iOS 8.2, *) {
+            cell?.textLabel?.font = UIFont.systemFont(ofSize: 15 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
         cell?.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
         cell?.nameLabel.text = informationArr[indexPath.row] as? String
         if indexPath.row == 0 {

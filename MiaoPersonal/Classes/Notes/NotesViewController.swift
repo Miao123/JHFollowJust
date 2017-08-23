@@ -63,6 +63,11 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell = UITableViewCell(style:UITableViewCellStyle.default ,reuseIdentifier: cellID)
         }
         cell.textLabel?.text = textArr[indexPath.row] as String
+        if #available(iOS 8.2, *) {
+            cell?.textLabel?.font = UIFont.systemFont(ofSize: 15 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
         cell.textLabel?.textColor = RGB_COLOR(50, 50, 50)
         return cell!
     }
@@ -95,6 +100,15 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
             textArr.remove(at: indexPath.row)
             noteTableView.reloadData()
             userDefa.set(textArr, forKey: "storeNoteArr")
+            
+            //  在没有数据的时候显示去添加笔记
+            textArr = userDefa.object(forKey: "storeNoteArr") as! [String]
+            if textArr.count == 0 {
+                noData()
+            }else{
+                noneLabel.isHidden = true
+                noteTableView.reloadData()
+            }
         }else{
             
         }
@@ -111,7 +125,12 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         noneLabel = UILabel.init(frame: CGRect(x:0, y:0, width:screenWidth, height:screenHeight))
         noneLabel.text = "暂无笔记、去添加"
         noneLabel.textColor = BaseTextColor
-        noneLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
+        if #available(iOS 8.2, *) {
+            noneLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW, weight: UIFontWeightThin)
+        } else {
+            // Fallback on earlier versions
+        }
+        //        noneLabel.font = UIFont.systemFont(ofSize: 15 * DISTENCEW)
         noneLabel.textAlignment = NSTextAlignment.center
         self.view.addSubview(noneLabel)
     }
