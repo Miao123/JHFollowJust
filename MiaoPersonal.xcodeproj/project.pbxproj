@@ -18,6 +18,7 @@
 		DD2E168C1F31D7A9009995BA /* NewNotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2E168B1F31D7A9009995BA /* NewNotesController.swift */; };
 		DD5C90E11F2F80FD00941608 /* UIView+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C90E01F2F80FD00941608 /* UIView+NJ.m */; };
 		DDAA1F0E1F2B09DF0055C303 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAA1F0D1F2B09DF0055C303 /* File.swift */; };
+		DDAE7F731F4EDA3A00EDAC4E /* HomeDetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAE7F721F4EDA3A00EDAC4E /* HomeDetaViewController.swift */; };
 		DDB8D7081F2CDC2400FD4F30 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8D7071F2CDC2400FD4F30 /* MineTableViewCell.swift */; };
 		DDB8D70A1F2CDC3200FD4F30 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8D7091F2CDC3200FD4F30 /* MineViewController.swift */; };
 		DDB8D70C1F2CDC8400FD4F30 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8D70B1F2CDC8400FD4F30 /* SetUpViewController.swift */; };
@@ -62,6 +63,7 @@
 		DD5C90E01F2F80FD00941608 /* UIView+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NJ.m"; sourceTree = "<group>"; };
 		DDAA1F091F2AF3F90055C303 /* MiaoPersonal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiaoPersonal-Bridging-Header.h"; sourceTree = "<group>"; };
 		DDAA1F0D1F2B09DF0055C303 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		DDAE7F721F4EDA3A00EDAC4E /* HomeDetaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetaViewController.swift; sourceTree = "<group>"; };
 		DDB8D7071F2CDC2400FD4F30 /* MineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
 		DDB8D7091F2CDC3200FD4F30 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		DDB8D70B1F2CDC8400FD4F30 /* SetUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				DD1169461F29E42F00236A94 /* HomeViewController.swift */,
+				DDAE7F721F4EDA3A00EDAC4E /* HomeDetaViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				DD11694C1F29E9BC00236A94 /* TabBarViewController.swift in Sources */,
 				DD11694E1F29EC5900236A94 /* NavViewController.swift in Sources */,
 				DD5C90E11F2F80FD00941608 /* UIView+NJ.m in Sources */,
+				DDAE7F731F4EDA3A00EDAC4E /* HomeDetaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

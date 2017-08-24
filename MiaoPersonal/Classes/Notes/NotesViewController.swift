@@ -68,7 +68,7 @@ class NotesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         } else {
             // Fallback on earlier versions
         }
-        cell.textLabel?.textColor = RGB_COLOR(50, 50, 50)
+        cell.textLabel?.textColor = BaseTextColor
         return cell!
     }
     
